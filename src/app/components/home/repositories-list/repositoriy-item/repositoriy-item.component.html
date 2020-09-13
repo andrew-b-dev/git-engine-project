@@ -1,0 +1,28 @@
+<nz-comment class="repositories-item" [nzAuthor]="link">
+  <ng-template #link>
+    <a href="#">1234</a>
+  </ng-template>
+  <nz-avatar nz-comment-avatar nzIcon="user"
+             nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+  <nz-comment-content>
+    <div class="inner-content">
+      <div class="content-box">
+        <p>
+          We supply a series of design principles, practical patterns and high quality design resources (Sketch and
+          Axure), to help people
+          create their product prototypes beautifully and efficiently.
+        </p>
+
+        <div class="rating">
+          <div class="star">
+            <i nz-tooltip nzTitle="Like" nz-icon nzType="star" [nzTheme]="'fill'"></i>
+          </div>
+          <div class="count">098765</div>
+          <div class="lang">C++</div>
+        </div>
+      </div>
+
+      <button nz-button nzType="outline" [nzSize]="" nzShape="circle"><i nz-icon nzType="star"></i></button>
+    </div>
+  </nz-comment-content>
+</nz-comment>
