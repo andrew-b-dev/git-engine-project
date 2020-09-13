@@ -17,15 +17,19 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 registerLocaleData(en);
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 // Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { SearchFormComponent } from './components/home/search-form/search-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import { HomeComponent } from './components/home/home.component';
     NzMenuModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzInputModule,
+    NzSelectModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
